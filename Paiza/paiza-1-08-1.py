@@ -1,4 +1,4 @@
-# coding: utf-8
+﻿# coding: utf-8
 '''
 演習課題「スライムの合計体重を出力！」
 右側のコードエリアにあるプログラムは、出現するスライムの匹数をランダムに生成します。
@@ -13,7 +13,13 @@
 体重100キロのスライムがXX匹あらわれた
 スライムの合計体重はYYキロです
 '''
+
 import random
-number = random.randint(1, 10)  # 匹数 1 ～ 10
+
+number = random.randint(1, 10)	
 print("体重100キロのスライムが" + str(number) + "匹あらわれた")
-# 合計体重 = 匹数 x 100
+
+
+weight=number*100
+
+print("スライムの合計体重は"+str(weight)+"キロです")

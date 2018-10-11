@@ -1,4 +1,4 @@
-# coding: utf-8
+﻿# coding: utf-8
 '''
  演習課題「西暦年を昭和年に変換してみよう」
 右側のコードエリアのプログラムをもとに、プログラムを完成させてください。
@@ -11,12 +11,10 @@ seireki変数には、西暦年として 1926~1988 の中から選ばれた数�
 「西暦1926年は昭和1年です。」と表示してください。
 '''
 
-# 西暦を昭和年に変換
 import random
-seireki = random.randint(1926, 1988) #西暦年
-print("西暦" + str(seireki) + "年は", end = "")
 
-# 昭和年を計算
-showa = 0
-# 昭和年を出力
+seireki = random.randint(1926, 1988) 
+print("西暦" + str(seireki) + "年は", end = "")
+showa = seireki-1925
+
 print("昭和" + str(showa) + "年です。")
